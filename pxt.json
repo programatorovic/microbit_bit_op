@@ -1,0 +1,7 @@
+{
+  "name": "Bits Op",
+  "description": "Bitwise operations for MakeCode",
+  "files": [
+    "main.ts"
+  ]
+}
