@@ -39,4 +39,34 @@ namespace bitsOp {
     export function inv(a: number): number {
         return ~a;
     }
+
+    /**
+     * Sets the specified bit to 1
+     * @param bit bit position to set (0-31)
+     * @param value number to modify
+     */
+    //% block="set bit $bit in $value"
+    export function setBit(bit: number, value: number): number {
+        return value | (1 << bit);
+    }
+
+    /**
+     * Resets the specified bit to 0
+     * @param bit bit position to reset (0-31)
+     * @param value number to modify
+     */
+    //% block="reset bit $bit in $value"
+    export function resetBit(bit: number, value: number): number {
+        return value & ~(1 << bit);
+    }
+
+    /**
+     * Gets the value of the specified bit
+     * @param bit bit position to get (0-31)
+     * @param value number to check
+     */
+    //% block="get bit $bit in $value"
+    export function getBit(bit: number, value: number): number {
+        return (value >> bit) & 1;
+    }
 }
