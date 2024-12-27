@@ -1,11 +1,12 @@
 //% color=#0fbc11 icon="\uf2db" block="Bits Op"
+//% blockNamespace="bitsOp"
 namespace bitsOp {
     /**
      * Returns the bitwise AND of two numbers
      * @param a first number
      * @param b second number
      */
-    //% block
+    //% block="and $a $b"
     export function and(a: number, b: number): number {
         return a & b;
     }
@@ -15,7 +16,7 @@ namespace bitsOp {
      * @param a first number
      * @param b second number
      */
-    //% block
+    //% block="or $a $b"
     export function or(a: number, b: number): number {
         return a | b;
     }
@@ -25,7 +26,7 @@ namespace bitsOp {
      * @param a first number
      * @param b second number
      */
-    //% block
+    //% block="xor $a $b"
     export function xor(a: number, b: number): number {
         return a ^ b;
     }
@@ -34,7 +35,7 @@ namespace bitsOp {
      * Returns the bitwise NOT of a number
      * @param a number to invert
      */
-    //% block
+    //% block="inv $a"
     export function inv(a: number): number {
         return ~a;
     }
